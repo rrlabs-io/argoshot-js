@@ -1,0 +1,33 @@
+{
+  "name": "argoshot",
+  "version": "0.1.0",
+  "description": "Official client for the Argoshot screenshot API: screenshots, PDFs and signed og:image URLs of any web page or HTML.",
+  "keywords": ["argoshot", "screenshot", "screenshot-api", "html-to-image", "pdf", "og-image", "open-graph", "headless"],
+  "homepage": "https://argoshot.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrlabs-io/argoshot-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rrlabs-io/argoshot-js/issues"
+  },
+  "license": "MIT",
+  "author": "Argoshot",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/argoshot.test.js"
+  }
+}
